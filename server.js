@@ -53,7 +53,7 @@ async function run() {
     res.json(workoutRange);
   });
 
-  await mongoose.connect(config.databaseUrl, {
+  await mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
