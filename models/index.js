@@ -1,12 +1,6 @@
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
-// type: "resistance",
-//         name: "Military Press",
-//         duration: 20,
-//         weight: 300,
-//         reps: 10,
-//         sets: 4
 
 const ExerciseSchema = new Schema({
   type: String,
