@@ -4,6 +4,8 @@ const path = require("path");
 const mongoose = require("mongoose");
 const { Workout, Exercise } = require("./models");
 
+const PORT = process.env.PORT || 8080;
+
 app.use(express.json());
 
 const WEEK = 1000 * 60 * 60 * 24 * 7;
@@ -51,14 +53,14 @@ async function run() {
     res.json(workoutRange);
   });
 
-  await mongoose.connect("mongodb://localhost/workout", {
+  await mongoose.connect(config.databaseUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     useCreateIndex: true,
   });
 
-  app.listen(8080);
+  app.listen(PORT);
 }
 
 run();
