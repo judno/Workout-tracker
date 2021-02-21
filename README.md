@@ -18,3 +18,5 @@ If the exercise is a cardio exercise, you should be able to track your distance 
 ## DEPLOYEED APP
 
 [Fitness Tracker](https://workout-tracker-123.herokuapp.com/)
+ ## Screenshot
+ <img width="950" alt="workout tracker" src="https://user-images.githubusercontent.com/69154965/108616622-05a1b480-7463-11eb-9143-59ba2b7b5dc6.png">
